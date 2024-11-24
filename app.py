@@ -24,7 +24,7 @@ formulation = st.selectbox(
     "Formulation",
     ["Sodium Fluoride (NaF)", "Sodium Monofluorophosphate (NaMFP)", "Stannous Fluoride (SnF2)", "Fluoride Ion"],
 )
-concentration = st.number_input("Concentration in %", min_value=0.0, step=0.1, format="%.1f")
+concentration = st.number_input("Concentration in %", min_value=0.000, step=0.001, format="%.1f")
 amount_ingested = st.number_input(
     "Amount Ingested of Product in Ounces", min_value=0.0, step=0.1, format="%.1f"
 )
